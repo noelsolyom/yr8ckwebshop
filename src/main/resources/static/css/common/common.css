@@ -1,0 +1,57 @@
+body{
+  margin:0;
+  font-size: 16px;
+    background:  #DDD;
+}
+
+header, footer{
+  background:  #00F;
+}
+
+div{
+  position:relative;
+  box-sizing:border-box;
+  padding: 20px;
+}
+.container{
+  width:100%;
+  min-height: 100vh;
+  padding:0;
+}
+
+.container:after{
+  content: '';
+  clear: both;
+  display: table;
+}
+
+.container>div{
+  float: left;
+  height: auto;
+}
+
+.page-field{
+  width: 100%;
+  background:  #0b88c5;
+  overflow: auto
+}
+
+.side-menu{
+  width: 100%;
+  background:  #555;
+}
+
+@media(min-width:768px){
+  .page-field{
+    width: 75%;
+  }
+
+  .side-menu{
+    width: 25%;
+  }
+
+  .container>div{
+    height: 100vh;
+  }
+
+}
